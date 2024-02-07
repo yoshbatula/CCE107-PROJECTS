@@ -1,0 +1,25 @@
+.doctor {
+    -fx-text-fill: #0b0707;
+}
+
+.form {
+    -fx-background-color: #56a492;
+}
+
+.form2 {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 6,0,0,0);
+    -fx-background-color: #fff;
+    -fx-background-radius: 8px;
+}
+
+.form4 {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 6,0,0,0);
+    -fx-background-color: #fff;
+    -fx-background-radius: 3px;
+}
+
+.form3 {
+    -fx-background-color: #56a492;
+    -fx-background-radius: 8px;
+}
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cce107.HelloController">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutY="5.0" prefHeight="366.0" prefWidth="265.5" styleClass="form" stylesheets="@login.css">
+               <children>
+                  <ImageView id="dental" fitHeight="429.0" fitWidth="278.0" layoutX="-11.0" layoutY="-4.0" opacity="0.22" pickOnBounds="true" preserveRatio="true" styleClass="form">
+                     <image>
+                        <Image url="@dental.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="153.0" fitWidth="242.0" layoutX="24.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@LOGO (2).png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="53.0" layoutY="196.0" text="YUEM DENTAL CLINIC">
+                     <font>
+                        <Font name="Palatino Linotype Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label id="H2" layoutX="31.0" layoutY="223.0" styleClass="H2" stylesheets="@login.css" text="Healthy smiles, brighter in future." />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="261.0" layoutY="9.0" prefHeight="366.0" prefWidth="265.5">
+               <children>
+                  <TextField id="user" fx:id="user" layoutX="57.0" layoutY="156.0" onAction="#loginBTN" prefHeight="26.0" prefWidth="151.0" promptText="username" stylesheets="@login.css">
+                     <effect>
+                        <InnerShadow blurType="ONE_PASS_BOX" />
+                     </effect>
+                  </TextField>
+                  <PasswordField id="pass" fx:id="pass" layoutX="57.0" layoutY="197.0" onAction="#loginBTN" promptText="password" stylesheets="@login.css">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </PasswordField>
+                  <ImageView fitHeight="26.0" fitWidth="35.0" layoutX="32.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@user-avatar.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="26.0" layoutX="36.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@locked-padlock.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="label" layoutX="89.0" layoutY="100.0" prefHeight="18.0" prefWidth="87.0" text="SIGN IN">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="loginBTN" alignment="CENTER" layoutX="89.0" layoutY="243.0" mnemonicParsing="false" onAction="#loginBTN" prefHeight="30.0" prefWidth="87.0" styleClass="loginBTN" stylesheets="@login.css" text="LOGIN" />
+                  <Label fx:id="wrong" layoutX="57.0" layoutY="284.0" prefHeight="18.0" prefWidth="151.0" styleClass="wrong" stylesheets="@login.css" text="WRONG PASSWORD!!" />
+                  <Label fx:id="taplak" alignment="CENTER" layoutX="52.0" layoutY="285.0" prefHeight="18.0" prefWidth="151.0" styleClass="taplak" stylesheets="@login.css" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

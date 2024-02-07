@@ -1,0 +1,56 @@
+.body {
+    -fx-content-display: justify;
+    -fx-alignment: center;
+}
+
+.form {
+    -fx-background-color: #ecd7aa;
+}
+
+. DENTAL {
+    -fx-font-family: "Segoe UI Black";
+    -fx-alignment: center;
+    -fx-border-radius: none;
+    -fx-font-size: 14px;
+    -fx-font: bold;
+}
+
+.user {
+    -fx-prompt-text-fill: black;
+    -fx-font-family: bold, sans-serif;
+    -fx-alignment: center-left;
+    -fx-font-size: 12px;
+}
+
+.pass {
+    -fx-prompt-text-fill: black;
+    -fx-font-family: bold, sans-serif;
+    -fx-alignment: center-left;
+    -fx-font-size: 12px;
+}
+
+.loginBTN {
+    -fx-background-color: #ecd7aa;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-background-radius: 5px;
+    -fx-text-fill: black;
+    -fx-background-radius: 9px;
+}
+
+.H2 {
+    -fx-font-family: "Palatino Linotype";
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+    -fx-text-fill: bold;
+}
+
+.wrong {
+    -fx-text-fill: red;
+    -fx-font-size: 14px;
+    -fx-background-color: transparent;
+}
+
+.taplak {
+    -fx-background-color: white;
+}
